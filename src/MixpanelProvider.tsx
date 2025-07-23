@@ -1,4 +1,4 @@
-import { type Config, init } from 'mixpanel-browser';
+import mixpanel, { type Config } from 'mixpanel-browser';
 import { type ProviderProps, useMemo } from 'react';
 import { type MixpanelContext, mixpanelContext } from './mixpanelContext.js';
 
@@ -25,7 +25,7 @@ export function MixpanelProvider({
   );
 
   const context = useMemo(
-    () => (token ? init(token, config, name) : undefined),
+    () => (token ? mixpanel.init(token, config, name) : undefined),
     [config, name, token],
   );
 
