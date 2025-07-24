@@ -25,7 +25,7 @@ export function MixpanelProvider({
   );
 
   const context = useMemo(
-    () => (token ? mixpanel.init(token, config, name) : undefined),
+    () => (token ? mixpanel?.init(token, config, name) : undefined),
     [config, name, token],
   );
 

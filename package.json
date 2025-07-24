@@ -46,7 +46,7 @@
   "files": [
     "./dist/"
   ],
-  "homepage": "https://github.com/apancutt/react-mixpanel-browser#readme",
+  "homepage": "https://github.com/KrystalDeFi/react-mixpanel-browser#readme",
   "keywords": [
     "react",
     "mixpanel"
@@ -62,7 +62,7 @@
   "peerDependencies": {
     "react": "18"
   },
-  "repository": "apancutt/react-mixpanel-browser",
+  "repository": "KrystalDeFi/react-mixpanel-browser",
   "scripts": {
     "build": "rimraf ./dist && yarn exec ./bin/build.ts",
     "lint": "eslint --ext \".cjs,.mjs,.js,.jsx,.ts,.tsx\" --fix .",
